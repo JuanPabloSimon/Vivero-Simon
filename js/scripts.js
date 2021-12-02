@@ -8,31 +8,32 @@
 
 //Creacion de productos con JS 
 
-function Planta(nombre, precio) {
+function Planta(nombre, precio,imagen) {
     this.nombre = nombre;
     this.precio = precio;
+    this.imagen = imagen;
 }
 
-const producto1 = new Planta("Rosario", "$200 - $250 ")
-const producto2 = new Planta("Planta Fantasma", "$250 - $300")
-const producto3 = new Planta("Planta cebra", "$300 - $500")
-const producto4 = new Planta("Aeonium Kiwi", "$200 - $350")
-const producto5 = new Planta("Echeveria runyonii", "$250 - $350")
-const producto6 = new Planta("Haworthia Retusa", "$150 - $250")
-const producto7 = new Planta("Cordón de San Jose", "450")
-const producto8 = new Planta("Aeonium Haworthii", "$250 - $350")
-const producto9 = new Planta("Graptosedum Francesco Baldi", "$200 - $300")
-const producto10 = new Planta("  -  ", "$250 - $350")
-const producto11 = new Planta("  -  ", "$250")
-const producto12 = new Planta("  -  ", "$200")
+const producto1 = new Planta("Rosario", "$200 - $250 ", "rosario")
+const producto2 = new Planta("Planta Fantasma", "$250 - $300", "PlantaFantasma")
+const producto3 = new Planta("Planta cebra", "$300 - $500", "plantaCebra")
+const producto4 = new Planta("Aeonium Kiwi", "$200 - $350", "aeoniumKiwi")
+const producto5 = new Planta("Echeveria runyonii", "$250 - $350", "echeveriaRunyonii")
+const producto6 = new Planta("Haworthia Retusa", "$150 - $250", "haworthiaRetusa")
+const producto7 = new Planta("Cordón de San Jose", "450", "cordonSanJose")
+const producto8 = new Planta("Aeonium Haworthii", "$250 - $350", "aeoniumHaworthii")
+const producto9 = new Planta("Graptosedum Francesco Baldi", "$200 - $300", "graptosedumFrancesco")
+const producto10 = new Planta("  -  ", "$250 - $350", "desconocida1")
+const producto11 = new Planta("  -  ", "$250", "desconocida2")
+const producto12 = new Planta("  -  ", "$200", "desconocida3")
 
 const productos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9, producto10, producto11, producto12]
 
 for (const producto of productos) {
     let contenedor = document.createElement("div");
-    contenedor.innerHTML = `<div class="col mb-5">
+    contenedor.innerHTML = `<div class="col mb-5" style= "border: solid 2.5px gray; border-radius: 5px;">
                                 <div class="card h-100">
-                                    <img class="card-img-top" src="assets/aeoniumKiwi.jpg" alt="..." />
+                                    <img class="card-img-top" src="imagenes/${producto.imagen}.jpg" alt="..." />
                                     <div class="card-body p-4">
                                         <div class="text-center">
                                             <h5 class="fw-bolder"> ${producto.nombre} </h5>
