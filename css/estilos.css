@@ -7,6 +7,17 @@
     /* background-attachment: fixed; */
 }  
 
+#tituloHeader {
+    font-family: 'Comforter', cursive;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+.itemsNav {
+    font-family: 'Fuzzy Bubbles', cursive;
+
+}
+
 .text-gray {
     color: #5D737E;
 }
