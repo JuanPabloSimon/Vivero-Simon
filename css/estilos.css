@@ -1,0 +1,20 @@
+
+#header {
+    background-image: url("../assets/fondo2.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}  
+
+.text-gray {
+    color: #5D737E;
+}
+
+.bg-green {
+    background-color: #DAFFEF;
+} 
+
+.bg-lightgreen {
+    background-color: #DB7F8E;
+}
