@@ -26,8 +26,15 @@ const producto9 = new Planta("Graptosedum Francesco Baldi", "$200 - $300", "grap
 const producto10 = new Planta("  -  ", "$250 - $350", "desconocida1")
 const producto11 = new Planta("  -  ", "$250", "desconocida2")
 const producto12 = new Planta("  -  ", "$200", "desconocida3")
+const producto13 = new Planta("  -  ", "$250", "desconocida4")
+const producto14 = new Planta("  -  ", "$350", "desconocida5")
+const producto15 = new Planta("Aeonium Haworthii - Grande", "$500", "aeoniumHaworthii2")
+const producto16 = new Planta("  -  ", "$280", "cactus1")
+const producto17 = new Planta("  -  ", "$280", "cactus2")
+const producto18 = new Planta("Echeveria 'Topsy Turvy' ", "$350", "echeveriaTopsyTurvy")
+const producto19 = new Planta("Haworthia Reinwardtii", "$350", "haworthiaReinwardtii")
 
-const productos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9, producto10, producto11, producto12]
+const productos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9, producto10, producto11, producto12,producto13, producto14,producto15, producto16, producto17, producto18, producto19]
 
 for (const producto of productos) {
     let contenedor = document.createElement("div");
